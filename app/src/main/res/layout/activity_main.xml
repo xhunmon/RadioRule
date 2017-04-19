@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xhunmon.radiorule.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="FM：88.0"
+        android:textColor="#f0b"
+        android:textSize="35dp"/>
+
+    <com.xhunmon.radiorule.RadioRulerView
+        android:id="@+id/rule"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#d7d6cf"
+        android:padding="8dp"
+        app:line_color="#3390c2"
+        app:line_divider="3dp"
+        app:line_width="2dp"
+        app:move_line_color="#ffaf07d1"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_auto"
+            android:layout_marginLeft="50dp"
+            android:text="自动/手动"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="start"/>
+
+    </LinearLayout>
+</LinearLayout>
